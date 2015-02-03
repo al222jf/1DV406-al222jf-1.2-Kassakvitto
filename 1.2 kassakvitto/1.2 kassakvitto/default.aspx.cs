@@ -16,7 +16,10 @@ namespace _1._2_kassakvitto
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            if (IsValid)
+            {
+                
+            }
         }
     }
 }
