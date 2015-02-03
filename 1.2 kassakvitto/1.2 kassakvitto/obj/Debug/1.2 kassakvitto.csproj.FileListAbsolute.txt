@@ -1,0 +1,6 @@
+P:\Git\1DV406-al222jf-1.2-Kassakvitto\1.2 kassakvitto\1.2 kassakvitto\bin\1.2 kassakvitto.dll.config
+P:\Git\1DV406-al222jf-1.2-Kassakvitto\1.2 kassakvitto\1.2 kassakvitto\bin\1.2 kassakvitto.dll
+P:\Git\1DV406-al222jf-1.2-Kassakvitto\1.2 kassakvitto\1.2 kassakvitto\bin\1.2 kassakvitto.pdb
+P:\Git\1DV406-al222jf-1.2-Kassakvitto\1.2 kassakvitto\1.2 kassakvitto\obj\Debug\1.2 kassakvitto.csprojResolveAssemblyReference.cache
+P:\Git\1DV406-al222jf-1.2-Kassakvitto\1.2 kassakvitto\1.2 kassakvitto\obj\Debug\1.2 kassakvitto.dll
+P:\Git\1DV406-al222jf-1.2-Kassakvitto\1.2 kassakvitto\1.2 kassakvitto\obj\Debug\1.2 kassakvitto.pdb
