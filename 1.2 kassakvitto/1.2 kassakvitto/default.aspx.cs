@@ -18,7 +18,14 @@ namespace _1._2_kassakvitto
         {
             if (IsValid)
             {
+                Receipt receipt = new Receipt(double.Parse(SumTextBox.Text));
                 
+                SubtotalLiteral.Text = String.Format(SubtotalLiteral.Text, receipt.Subtotal);
+                DiscountLiteral.Text = String.Format(DiscountLiteral.Text, receipt.DiscountRate);
+                MoneyOffLiteral.Text = String.Format(MoneyOffLiteral.Text, receipt.MoneyOff);
+                TotalLiteral.Text = String.Format(TotalLiteral.Text, receipt.Total);
+                
+                DiscountPlaceHolder.Visible = true;
             }
         }
     }

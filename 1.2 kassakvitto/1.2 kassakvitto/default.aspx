@@ -26,7 +26,17 @@
     </form>
     <%-- Kvitto --%>
     <asp:PlaceHolder ID="DiscountPlaceHolder" runat="server" Visible="false">
+        <dl>
+            <dt>Totalt</dt>
+            <dd><asp:Literal runat="server" ID="SubtotalLiteral">{0:c}</asp:Literal></dd>
+            <dt>Rabattsats</dt>
+            <dd><asp:Literal runat="server" ID="DiscountLiteral">{0:p}</asp:Literal></dd>
+            <dt>Rabatt</dt>
+            <dd><asp:Literal runat="server" ID="MoneyOffLiteral">{0:c}</asp:Literal></dd>
+            <dt>Att betala</dt>
+            <dd><asp:Literal runat="server" ID="TotalLiteral">{0:c}</asp:Literal></dd>
 
+        </dl>
     </asp:PlaceHolder>
 </body>
 </html>
