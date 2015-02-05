@@ -1,0 +1,25 @@
+﻿body {
+}
+
+dt {
+    float: left;
+}
+
+dd {
+    text-align: right;
+}
+
+#SumButton {
+    margin-top: 5px;
+}
+
+#receipt {
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#InputCompareValidator, #InputRequiredFieldValidator {
+    color: red;
+}

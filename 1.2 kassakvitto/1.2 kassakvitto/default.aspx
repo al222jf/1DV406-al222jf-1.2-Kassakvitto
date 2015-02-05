@@ -5,14 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="Model/style.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
     <%-- --%>
     <div>
         <%-- Textbox --%>
-        <asp:TextBox ID="SumTextBox" runat="server"></asp:TextBox>
-        <asp:Label ID="SumLabel" runat="server" Text="Label">kr</asp:Label>
+        <asp:TextBox ID="SumTextBox" runat="server"></asp:TextBox><span>kr</span>
         <%-- Felmeddelande och validate --%>
         <asp:RequiredFieldValidator ID="InputRequiredFieldValidator" runat="server" 
             ErrorMessage="Fältet får inte vara tomt" 
@@ -24,19 +24,20 @@
         <%-- Knappar --%>
         <asp:Button ID="SumButton" runat="server" Text="Beräkna rabbat" OnClick="Button1_Click" />
     </form>
-    <%-- Kvitto --%>
+    <%-- Placeholder med Kvitto --%>
     <asp:PlaceHolder ID="DiscountPlaceHolder" runat="server" Visible="false">
-        <dl>
-            <dt>Totalt</dt>
-            <dd><asp:Literal runat="server" ID="SubtotalLiteral">{0:c}</asp:Literal></dd>
-            <dt>Rabattsats</dt>
-            <dd><asp:Literal runat="server" ID="DiscountLiteral">{0:p}</asp:Literal></dd>
-            <dt>Rabatt</dt>
-            <dd><asp:Literal runat="server" ID="MoneyOffLiteral">{0:c}</asp:Literal></dd>
-            <dt>Att betala</dt>
-            <dd><asp:Literal runat="server" ID="TotalLiteral">{0:c}</asp:Literal></dd>
-
-        </dl>
+        <div id="receipt">
+            <dl>
+                <dt>Totalt</dt>
+                <dd><asp:Literal runat="server" ID="SubtotalLiteral">{0:c}</asp:Literal></dd>
+                <dt>Rabattsats</dt>
+                <dd><asp:Literal runat="server" ID="DiscountLiteral">{0:p0}</asp:Literal></dd>
+                <dt>Rabatt</dt>
+                <dd><asp:Literal runat="server" ID="MoneyOffLiteral">{0:c}</asp:Literal></dd>
+                <dt>Att betala</dt>
+                <dd><asp:Literal runat="server" ID="TotalLiteral">{0:c}</asp:Literal></dd>
+            </dl>
+        </div>
     </asp:PlaceHolder>
 </body>
 </html>

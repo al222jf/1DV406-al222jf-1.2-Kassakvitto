@@ -11,9 +11,7 @@ namespace _1._2_kassakvitto
 
         public Receipt(double subtotal)
         {
-            Subtotal = subtotal;
             Calculate(Subtotal);
-
         }
 
         public double DiscountRate
@@ -46,15 +44,17 @@ namespace _1._2_kassakvitto
 
         public void Calculate(double subtotal)
         {
+            Subtotal = subtotal;
+
             if (subtotal <= 499)
             {
                 DiscountRate = 0;
             }
-            else if (subtotal >= 500 || subtotal <= 999)
+            else if (subtotal <= 999)
             {
                 DiscountRate = 0.05;
             }
-            else if (subtotal >= 1000 || subtotal <= 4999)
+            else if (subtotal <= 4999)
             {
                 DiscountRate = 0.1;
             }

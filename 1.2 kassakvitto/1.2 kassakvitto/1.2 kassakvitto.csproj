@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
+    <Content Include="Error.html" />
+    <Content Include="Content\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
